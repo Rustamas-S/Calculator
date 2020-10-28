@@ -11,7 +11,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             String expression = scanner.nextLine();
-            if (expression.equals("q")) {
+            if (expression.equals("quit")) {
                 break;
             }
             System.out.println("Result: " + calculate(expression));
