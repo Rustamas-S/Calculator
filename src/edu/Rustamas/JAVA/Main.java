@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 
 public class Main {
     private static final Pattern EXPRESSION_PATTERN = Pattern.compile("([0-9]*)([+-x\\%!])([0-9]*)");
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         while (true) {
@@ -16,6 +17,7 @@ public class Main {
             System.out.println("Result: " + calculate(expression));
         }
     }
+
     private static int calculate(String expression) {
         if (expression.equals("")) {
             return 0;
@@ -57,6 +59,7 @@ public class Main {
         }
         return result;
     }
+
     private static int factorial(int number) {
         int result = 1;
         for (int i = number; i > 0; i--) {
